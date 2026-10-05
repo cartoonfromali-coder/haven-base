@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Padded Bed Headboard Style Guide | Haven & Base</title>
+  <meta name="description" content="Compare padded bed headboard styles and learn how shape, height, upholstery and proportions can affect the look of your bedroom.">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    :root {
+      --primary: #3B4A3F;
+      --primary-dark: #222623;
+      --bg: #f5f2eb;
+      --surface: #ffffff;
+      --border: #e3decb;
+      --text: #222623;
+      --muted: #68706a;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, Arial, sans-serif;
+      line-height: 1.7;
+    }
+
+    .article-page {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 50px 24px 70px;
+    }
+
+    .hero {
+      background: var(--primary-dark);
+      color: #fff;
+      padding: 58px 42px;
+      border-radius: 18px;
+      margin-bottom: 34px;
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      color: #c8d1c8;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 800px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(34px, 5vw, 54px);
+      line-height: 1.12;
+      font-weight: 600;
+    }
+
+    .hero p {
+      max-width: 730px;
+      margin: 20px 0 0;
+      color: #dce1dc;
+      font-size: 17px;
+    }
+
+    .content {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 38px 42px;
+    }
+
+    h2 {
+      margin: 42px 0 14px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 30px;
+      line-height: 1.25;
+      color: var(--primary-dark);
+    }
+
+    h2:first-child { margin-top: 0; }
+
+    h3 {
+      margin: 28px 0 8px;
+      font-size: 19px;
+      color: var(--primary);
+    }
+
+    p { margin: 0 0 16px; }
+
+    .quick-answer {
+      background: #f0eee7;
+      border-left: 4px solid var(--primary);
+      padding: 22px 24px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+
+    .quick-answer strong {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--primary-dark);
+    }
+
+    .style-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin: 24px 0;
+    }
+
+    .style-card {
+      padding: 24px;
+      background: #fcfbf8;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+
+    .style-card strong {
+      display: block;
+      color: var(--primary);
+      font-size: 18px;
+      margin-bottom: 7px;
+    }
+
+    .style-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .note {
+      margin: 28px 0;
+      padding: 22px 24px;
+      border-radius: 10px;
+      background: #eef1ed;
+      color: #39423c;
+    }
+
+    .checklist {
+      margin: 20px 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .checklist li {
+      position: relative;
+      padding: 11px 0 11px 30px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .checklist li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    .product-card {
+      margin: 34px 0;
+      padding: 28px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: #f8f6f0;
+    }
+
+    .product-card h3 {
+      margin-top: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 25px;
+    }
+
+    .product-card a,
+    .cta a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 12px 19px;
+      border-radius: 7px;
+      background: var(--primary);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .product-card a:hover,
+    .cta a:hover {
+      background: var(--primary-dark);
+    }
+
+    .cta {
+      margin-top: 42px;
+      padding: 30px;
+      border-radius: 14px;
+      background: var(--primary-dark);
+      color: #fff;
+    }
+
+    .cta h2 {
+      margin-top: 0;
+      color: #fff;
+    }
+
+    .cta p { color: #dce1dc; }
+
+    .related {
+      margin-top: 38px;
+      padding-top: 28px;
+      border-top: 1px solid var(--border);
+    }
+
+    .related a {
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    @media (max-width: 760px) {
+      .article-page { padding: 30px 16px 50px; }
+      .hero { padding: 40px 24px; border-radius: 14px; }
+      .content { padding: 28px 22px; }
+      .style-grid { grid-template-columns: 1fr; }
+      h2 { font-size: 27px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="header"></div>
+
+  <main class="article-page">
+
+    <section class="hero">
+      <p class="eyebrow">Padded Beds Guide</p>
+      <h1>Padded Bed Headboard Style Guide</h1>
+      <p>The headboard often defines the character of an upholstered bed. Learn which details to consider when choosing a style that suits your bedroom.</p>
+    </section>
+
+    <article class="content">
+
+      <div class="quick-answer">
+        <strong>Quick answer</strong>
+        Choose a headboard by considering its shape, height, upholstery, visual weight and relationship with the rest of your bedroom furniture. The best style is one that feels proportionate to both the bed and the room.
+      </div>
+
+      <h2>Why the Headboard Matters</h2>
+
+      <p>A padded headboard can become one of the most noticeable features in a bedroom. It creates a visual anchor behind the bed and can make a relatively simple base feel more substantial.</p>
+
+      <p>Because of this, choosing the headboard separately from the rest of the room can sometimes produce an unbalanced result. Consider the complete bedroom rather than focusing only on the headboard itself.</p>
+
+      <h2>Headboard Styles to Consider</h2>
+
+      <div class="style-grid">
+
+        <div class="style-card">
+          <strong>Simple rectangular</strong>
+          <p>A straightforward shape can work well when you want the bed to feel calm and versatile.</p>
+        </div>
+
+        <div class="style-card">
+          <strong>Tall upholstered</strong>
+          <p>A taller design can create a stronger focal point, particularly where the wall behind the bed has enough space.</p>
+        </div>
+
+        <div class="style-card">
+          <strong>Panelled</strong>
+          <p>Panel detailing can introduce structure without requiring a heavily decorative bedroom scheme.</p>
+        </div>
+
+        <div class="style-card">
+          <strong>Statement shape</strong>
+          <p>A more distinctive outline can suit bedrooms where the bed is intended to be the main visual feature.</p>
+        </div>
+
+      </div>
+
+      <h2>Think About Headboard Height</h2>
+
+      <p>Height affects both the visual balance of the bed and how much wall space the headboard occupies.</p>
+
+      <p>In a smaller bedroom, an extremely tall headboard may dominate the room. In a larger room with high ceilings, a more substantial headboard can help the bed feel correctly scaled.</p>
+
+      <div class="note">
+        <strong>Proportion tip:</strong> Look at the headboard alongside the width of the bed and the height of nearby furniture. The goal is visual balance rather than simply choosing the tallest option available.
+      </div>
+
+      <h2>Match the Upholstery to the Bedroom</h2>
+
+      <p>Upholstery gives you another way to control the character of the bed. Neutral fabrics can work across different decorating schemes, while richer tones can make the bed more visually prominent.</p>
+
+      <p>You do not necessarily need to match the headboard exactly to curtains or other fabrics. Similar tones, textures or levels of contrast can be enough to create a cohesive room.</p>
+
+      <h2>Consider the Furniture Around the Bed</h2>
+
+      <p>Bedside tables are especially important because they sit directly alongside the headboard. A very decorative headboard paired with equally elaborate bedside furniture can make the room feel visually crowded.</p>
+
+      <p>If the bedroom already contains strong furniture pieces, a simpler headboard can provide balance. Conversely, a restrained bedroom may benefit from a more distinctive upholstered design.</p>
+
+      <h2>Choose a Style That Will Remain Useful</h2>
+
+      <p>Bedroom trends change, but the bed is usually a long-term purchase. A headboard should therefore work with the way you expect to use the room rather than being selected purely because it is currently fashionable.</p>
+
+      <p>Think about whether you are likely to change wall colours, curtains or other furniture in the future. A versatile headboard can make those later changes easier.</p>
+
+      <h2>Headboard Selection Checklist</h2>
+
+      <ul class="checklist">
+        <li>Consider the overall size of the bedroom.</li>
+        <li>Check the headboard width against the bed size.</li>
+        <li>Consider whether the height suits the room's proportions.</li>
+        <li>Compare upholstery with existing bedroom fabrics.</li>
+        <li>Look at the relationship between the headboard and bedside furniture.</li>
+        <li>Decide whether the bed should be subtle or the main focal point.</li>
+        <li>Choose a style that can work with future room changes.</li>
+      </ul>
+
+      <div class="product-card">
+        <h3>Panel Padded Divan Bed</h3>
+        <p>The Panel Padded Divan Bed is worth comparing if you are interested in an upholstered design where the bed itself adds structure and character to the bedroom.</p>
+        <a href="https://everlybeds.co.uk/products/panel-padded-divan-bed" target="_blank" rel="noopener">View Panel Padded Divan Bed</a>
+      </div>
+
+      <div class="cta">
+        <h2>Compare Padded Bed Designs</h2>
+        <p>Explore the padded bed collection to compare upholstery, proportions and different bedroom styles.</p>
+        <a href="https://everlybeds.co.uk/collections/padded-divan-beds" target="_blank" rel="noopener">Explore Padded Beds</a>
+      </div>
+
+      <div class="related">
+        <h2>More Padded Bed Guides</h2>
+        <p><a href="how-to-measure-bedroom-for-a-padded-bed.html">How to Measure Your Bedroom for a Padded Bed</a></p>
+        <p><a href="upholstered-bed-frame-buying-checklist.html">Upholstered Bed Frame Buying Checklist</a></p>
+        <p><a href="padded-beds.html">Return to Padded Beds</a></p>
+      </div>
+
+    </article>
+
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="header.js"></script>
+  <script src="footer.js"></script>
+
+</body>
+</html>
